@@ -94,3 +94,15 @@ To see which lines are not covered:
 uv run pytest --cov=chronotag --cov-report=term-missing
 ```
 
+## Roadmap / TODO
+
+Future improvements planned for `chronotag`:
+
+-   [ ] **Context Manager for Timing**: Implement a context manager (e.g., `with logger.measure(...)`) for cleaner timing code.
+-   [ ] **Thread Safety**: Ensure `_start_times` and other mutable states are thread-safe.
+-   [ ] **Type Hinting**: Add comprehensive type annotations and `mypy` support.
+-   [ ] **Configuration Object**: Refactor `get_prefixed_logger` to accept a configuration object/dataclass.
+-   [ ] **Structured Logging (JSON)**: Support JSON output for better integration with cloud logging systems.
+-   [ ] **Decorator Support**: Add decorators for automatic function timing (e.g., `@logger.time_execution`).
+-   [ ] **Explicit Exports**: Define `__all__` in `__init__.py` for a cleaner public API.
+
