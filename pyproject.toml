@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Liudas Sodonis", email = "liudas.sodonis@fastloop.ai" }
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
     "google-cloud-logging>=3.12.1",
 ]
